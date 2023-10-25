@@ -1,0 +1,4 @@
+@openzeppelin/=lib/openzeppelin-contracts/
+@upgradeable/=lib/openzeppelin-contracts-upgradeable/
+@chiruLabs/=lib/ERC721A/
+@chiruLabsUpgradeable/=lib/ERC721A-Upgradeable/

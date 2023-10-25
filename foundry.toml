@@ -1,0 +1,27 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+fs_permissions = [{ access = "read", path = "./"}]
+optimizer = true
+optimizer_runs = 100
+gas_reports = ["*"]
+solc = "0.8.19"
+
+
+[etherscan]
+polygon-mumbai = { key = "${POLYGON_API_KEY}", url = "https://mumbai.polygonscan.com/api" }
+ethereum-goerli = { key = "${ETHERSCAN_API_KEY}", url = "https://goerli.etherscan.io/api" }
+celo-alfajores = { key = "${ALFAJORES_API_KEY}", url = "https://api-alfajores.celoscan.io/api" }
+ethereum-sepolia = {key="${ETHERSCAN_API_KEY}",url="https://api-sepolia.etherscan.io/api"}
+
+
+[rpc_endpoints]
+mainnet = "${ALCHEMY_MAINNET_URL}"
+goerli = "${ALCHEMY_GOERLI_URL}"
+polygon = "${GOERLI_POLYGON_URL}"
+alfajores = "${ALFAJORES_URL}"
+mumbai = "${MUMBAI_RPC_URL}"
+sepolia = "${SEPOLIA_RPC_URL}"
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config

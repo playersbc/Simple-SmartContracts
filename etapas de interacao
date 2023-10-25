@@ -1,0 +1,25 @@
+Interacoes e ordens:
+
+1 - addiInternational
+2 - addFederalAccount
+3 - addBaseAccount
+
+4 - createPlayerPassport
+A idade deve ser pego em timestamp para calcular conforme o tempo atual
+Toda vez que vc for transferir entre enderecos de time deve se adicionar em addBaseAccount.
+
+5 - generatePlayerRequestBase
+O time base mostra que quer executar uma transferencia
+
+6 - acceptVoteFederal
+Federacao aceita conforme o ID do passaport. Que sempre comeca no zero
+
+7 - executeTransactionBase
+Assim o time podera fazer a transacao e receber seu valor de solidariedade
+
+Caso a federacao peca a transacao:
+
+8 - generatePlayerRequestFederal
+
+9 - acceptBaseandExecute
+Aqui o time base que vai aceitar e executar a transferencia e pagamento que os valores estao no contrato.
